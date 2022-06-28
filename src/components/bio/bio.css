@@ -1,0 +1,12 @@
+.bio {
+	padding-top: 5vh;
+	padding-left: 5vw;
+}
+
+/* ===========MEDIA QUERIES (medium)===========*/
+
+@media screen and (max-width: 1024px) {
+	.bio {
+		padding-left: 15vw;
+	}
+}

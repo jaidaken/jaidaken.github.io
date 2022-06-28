@@ -11,11 +11,11 @@
 }
 
 :root {
-  --color-bg: hsl(240, 19%, 17%) ;
-  --color-bg-variant:hsl(240, 22%, 24%)  ;
-  --color-bg-variant-2:hsl(240, 21%, 21%)  ;
-  --color-primary:hsl(123, 82%, 63%) ;
-  --color-primary-variant:hsl(123, 49%, 33%) ;
+  --color-bg: hsl(240, 19%, 10%) ;
+  --color-bg-variant:hsl(240, 21%, 16%)  ;
+  --color-bg-variant-2:hsl(240, 22%, 12%)  ;
+  --color-primary:hsl(123, 72%, 46%) ;
+  --color-primary-variant:hsl(123, 78%, 33%) ;
   --color-white:hsl(0, 0%, 85%) ;
   --color-light:hsl(64, 19%, 72%);
 

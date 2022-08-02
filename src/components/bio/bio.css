@@ -1,14 +1,24 @@
 .bio {
 	padding-top: 2vh;
-	padding-left: 5vw;
+	padding-left: 2vw;
 	margin: auto;
 	margin-left: clamp(5vw, 0vw + 10%, 12vw);
-	background-color: black;
+	width: clamp(60vw, 0vw + 5%, 100vw);
+
+}
+
+.bio div {
+	width: clamp(80vw, 0vw + 5%, 100vw);
+	padding-left: 10px;
+	border-left: 6px solid rgb(5, 169, 33) !important;
 }
 /* ===========MEDIA QUERIES (medium)===========*/
 
 @media screen and (max-width: 1024px) {
 	.bio {
 		padding-left: 15vw;
+
+	margin-left: clamp(1vw, 0vw + 10%, 1vw);
 	}
+
 }

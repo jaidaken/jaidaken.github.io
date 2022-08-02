@@ -30,6 +30,7 @@ function Nav() {
           activeclassname="active"
           className="nav-link about-link"
           to="#about"
+          onClick="document.getElementById('about').scrollIntoView()"
         >
           <FiBookOpen />
         </NavLink>

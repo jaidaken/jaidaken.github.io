@@ -38,6 +38,7 @@ function Header() {
             transition={{ duration: 1, delay: 5 }}
             href="https://github.com/jaidaken"
             target="__blank"
+            rel="noreferrer"
           >
             <bs.BsGithub />
           </motion.a>
@@ -47,6 +48,7 @@ function Header() {
             transition={{ duration: 1, delay: 5.3 }}
             href="https://www.linkedin.com/in/jhewitthw/"
             target="__blank"
+            rel="noreferrer"
           >
             <bs.BsLinkedin />
           </motion.a>
@@ -55,8 +57,9 @@ function Header() {
             initial={{ x: "-60vw" }}
             animate={{ x: "0vw", opacity: [0, 1] }}
             transition={{ duration: 1, delay: 5.6 }}
-            href="mailto:jamiehewitt@protonmail.com"
-            target="__blank"
+            href="https://www.linkedin.com/in/jhewitthw/"
+            target="_blank"
+            rel="noreferrer"
           >
             <AiFillFilePdf />
           </motion.a>

@@ -1,0 +1,120 @@
+.projects {
+	margin: auto;
+	margin-left: clamp(5vw, 0vw + 10%, 12vw);
+	padding-left: 2vw;
+
+}
+
+.project-title {
+	font-size: 3em;
+	padding-bottom: 20px;
+}
+
+.project-container {
+	border-left: 6px solid hsl(130, 94%, 34%) !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card-image img {
+	border-radius: 10px;
+	transition: all 0.3s ease-in-out;
+	max-width: calc(100% - 2vw);
+	filter: grayscale();
+}
+.card-image h3{
+	z-index: 1;
+	transition: all 0.3s ease-in-out;
+	color: hsl(130, 94%, 34%);
+	font-size: 2.4em;
+	position: absolute;
+	padding-left: 10px;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0px 0px 0px rgba(206,89,55,0);
+}
+
+.card-image{
+	display: inline-block;
+	width: clamp(20vw, 25vw - 0%, 30vw);
+	margin: 0;
+	padding: 20px;
+}
+
+.card-container {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center;
+	align-items: center;
+}
+
+.card-image:hover img {
+	filter: none;
+}
+
+.card-image:hover h3 {
+	color: hsla(0, 0%, 13%, 0%);
+	text-shadow: none;
+
+}
+
+.buttons {
+	position: absolute;
+	margin-top: -40px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+
+}
+
+.btn {
+  width: min-content;
+  color: var(--color-primary);
+	padding: 2px;
+  margin: 2px;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.btn-primary {
+ background: var(--color-primary);
+ color: var(--color-bg);
+}
+
+img {
+	object-fit:contain;
+}
+
+@media screen and (max-width: 1300px) {
+
+	.card-image{
+		width: clamp(20vw, 25vw - 0%, 30vw);
+	}
+}
+@media screen and (max-width: 1024px) {
+	.projects {
+		padding-left: 15vw;
+		margin-left: clamp(1vw, 0vw + 10%, 1vw);
+	}
+
+	.card-image{
+		width: clamp(30vw, 40vw - 0%, 50vw);
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.card-image{
+		width: fit-content;
+	}
+}
+
+

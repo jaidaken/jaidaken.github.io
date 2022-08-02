@@ -7,7 +7,7 @@ function Bio() {
     <section id="about" className="bio">
       <div>
         <p>
-          I am currently studying at
+          I am currently studying at&nbsp;
           <a href="https://www.thejump.tech">The Jump: Coding Bootcamp</a> in
           hopes of a career change to web development. Currently a barista and
           coffee lover, I am looking for a new challenge in an exciting

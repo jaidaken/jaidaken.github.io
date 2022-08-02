@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ce423ee0.css",
+    "main.js": "/static/js/main.867c885c.js",
+    "static/media/circleme.png": "/static/media/circleme.bed815649419371e814e.png",
+    "index.html": "/index.html",
+    "main.ce423ee0.css.map": "/static/css/main.ce423ee0.css.map",
+    "main.867c885c.js.map": "/static/js/main.867c885c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce423ee0.css",
+    "static/js/main.867c885c.js"
+  ]
+}

@@ -1,5 +1,5 @@
 .nav-div {
-  position: absolute;
+  position:absolute;
   background: var(--color-bg-variant-2);
   width: clamp(8vw, 15vw, 10vw);
   height: 100%;

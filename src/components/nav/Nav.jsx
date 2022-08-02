@@ -29,7 +29,7 @@ function Nav() {
           exact="true"
           activeclassname="active"
           className="nav-link about-link"
-          to="/#About"
+          to="#about"
         >
           <FiBookOpen />
         </NavLink>
@@ -38,7 +38,7 @@ function Nav() {
           exact="true"
           activeclassname="active"
           className="nav-link project-link"
-          to="/#Projects"
+          to="#projects"
         >
           <AiOutlineFundProjectionScreen />
         </NavLink>
@@ -47,7 +47,7 @@ function Nav() {
           exact="true"
           activeclassname="active"
           className="nav-link contact-link"
-          to="/#Contact"
+          to="/contact"
         >
           <AiOutlineMessage />
         </NavLink>

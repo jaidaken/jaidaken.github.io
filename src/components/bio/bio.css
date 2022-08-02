@@ -1,9 +1,9 @@
 .bio {
 	padding-top: 2vh;
 	padding-left: 5vw;
-	background-color: black;
 	margin: auto;
-	width: 100vw;
+	margin-left: clamp(5vw, 0vw + 10%, 12vw);
+	background-color: black;
 }
 /* ===========MEDIA QUERIES (medium)===========*/
 

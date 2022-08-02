@@ -18,6 +18,8 @@ export default function Projects() {
               <a
                 href="https://github.com/jaidaken/jaidaken.github.io"
                 className="btn"
+                target="_blank"
+                rel="noreferrer"
               >
                 Github
               </a>
@@ -40,6 +42,8 @@ export default function Projects() {
               <a
                 href="https://github.com/jaidaken/jaidaken.github.io"
                 className="btn"
+                target="_blank"
+                rel="noreferrer"
               >
                 Github
               </a>
@@ -62,6 +66,8 @@ export default function Projects() {
               <a
                 href="https://github.com/jaidaken/jaidaken.github.io"
                 className="btn"
+                target="_blank"
+                rel="noreferrer"
               >
                 Github
               </a>
@@ -84,6 +90,8 @@ export default function Projects() {
               <a
                 href="https://github.com/jaidaken/jaidaken.github.io"
                 className="btn"
+                target="_blank"
+                rel="noreferrer"
               >
                 Github
               </a>
@@ -106,6 +114,8 @@ export default function Projects() {
               <a
                 href="https://github.com/jaidaken/jaidaken.github.io"
                 className="btn"
+                target="_blank"
+                rel="noreferrer"
               >
                 Github
               </a>
@@ -128,6 +138,8 @@ export default function Projects() {
               <a
                 href="https://github.com/jaidaken/jaidaken.github.io"
                 className="btn"
+                target="_blank"
+                rel="noreferrer"
               >
                 Github
               </a>

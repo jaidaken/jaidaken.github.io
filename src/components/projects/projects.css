@@ -30,7 +30,7 @@
 }
 
 .image-div img {
-	filter: blur(15px);
+	filter: grayscale(0.6) blur(15px);
 
 }
 .card-image h3{
@@ -39,7 +39,7 @@
 	color: hsl(130, 94%, 34%);
 	font-size: 2.4em;
 	position: absolute;
-	padding-left: 0px;
+	padding-left: 20px;
 	font-weight: bold;
 	text-shadow: 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0px 0px 0px rgba(206,89,55,0);
 }
@@ -125,7 +125,7 @@ img {
 
 @media screen and (max-width: 700px) {
 	.card-image{
-		width: fit-content;
+		width: clamp(50vw, 80vw - 0%, 80vw);
 	}
 }
 

@@ -12,7 +12,7 @@
 }
 
 .project-container {
-	border-left: 6px solid hsl(130, 94%, 34%) !important;
+	border-left: 6px solid hsl(130, 94%, 34%) ;
 }
 
 .card-image img {
@@ -126,6 +126,12 @@ img {
 @media screen and (max-width: 700px) {
 	.card-image{
 		width: clamp(50vw, 80vw - 0%, 80vw);
+	}
+	.project-container {
+		border-left: none !important;
+	}
+	.projects {
+		padding-left: 10vw;
 	}
 }
 

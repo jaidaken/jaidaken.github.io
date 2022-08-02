@@ -44,6 +44,15 @@
 
 }
 @media screen and (max-width: 700px) {
+	.bio {
+		padding-left: 10vw;
+	}
+	.bio div {
+		padding-left: 0px !important;
+		border-left: none !important;
+
+	}
+
 	.bio h2 {
 		font-size: 1.6em;
 	}

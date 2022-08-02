@@ -1,7 +1,8 @@
 .header {
 	background: var(--color-bg-variant);
+	margin-left: clamp(5vw, 0vw + 10%, 12vw);
 	width: 100vw;
-	height: 30%;
+	height: 20%;
 	padding: 5% 3vw;
 }
 
@@ -20,7 +21,7 @@
 
 @media screen and (max-width: 1024px) {
 	.header {
-		height: 30%;
+		height: 20%;
 		padding: 10% 10vw;
 	}
 }

@@ -1,16 +1,59 @@
 import "./nav.css";
-import React from 'react'
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import {
+  AiOutlineHome,
+  AiOutlineFundProjectionScreen,
+  AiOutlineMessage,
+} from "react-icons/ai";
+import { FiBookOpen } from "react-icons/fi";
+import CircleMe from "../../assets/circleme.png";
 
-const Nav = () => {
+function Nav() {
   return (
-    <nav className="nav">
-      <ul>
-        <li className="btn-nav">Bio</li>
-        <li className="btn-nav">Projects</li>
-        <li className="btn-nav">Contact</li>
-      </ul>
-    </nav>
-  )
+    <div className="nav-div">
+      <Link className="pic" to="/">
+        <img src={CircleMe} alt="Me" />
+      </Link>
+      <nav>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="nav-link home-link"
+          to="/"
+        >
+          <AiOutlineHome />
+        </NavLink>
+
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="nav-link about-link"
+          to="/#About"
+        >
+          <FiBookOpen />
+        </NavLink>
+
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="nav-link project-link"
+          to="/#Projects"
+        >
+          <AiOutlineFundProjectionScreen />
+        </NavLink>
+
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="nav-link contact-link"
+          to="/#Contact"
+        >
+          <AiOutlineMessage />
+        </NavLink>
+      </nav>
+    </div>
+  );
 }
 
-export default Nav
+export default Nav;

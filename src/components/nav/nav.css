@@ -9,7 +9,7 @@
 
 .nav-link {
   margin: auto;
-  font-size: clamp(0.5rem, 0.1rem + 2vw, 4rem);
+  font-size: clamp(1.7rem, 0.1rem + 2vw, 4rem);
   display: block;
   position: relative;
   line-height: clamp(10px, 10px + 5vh, 80px);

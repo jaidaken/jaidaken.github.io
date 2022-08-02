@@ -4,11 +4,9 @@
 	padding: 4% 2% 2%;
 	line-height: clamp(40px, 40px + 1vh, 200px);
 }
-.header div {
-	width: clamp(80vw, 0vw + 5%, 100vw);
-}
+
 .title {
-	font-size: clamp(2.6rem, 0.3rem + 4.5vw, 8rem);
+	font-size: clamp(3rem, 4rem + 1vw, 8rem);
 }
 
 .links {
@@ -16,7 +14,7 @@
 	justify-content: left;
 	gap: 2rem;
 	padding-top: 4%;
-	font-size: clamp(1rem, 0.1rem + 4vw, 2rem);
+	font-size: clamp(0.1rem, 0.3rem + 4vw, 2rem);
 }
 
 /* ===========MEDIA QUERIES (medium)===========*/

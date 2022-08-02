@@ -7,20 +7,21 @@
 
 .bio h2 {
 	padding: 20px 0 0 0;
-	font-size: 3em;
+	font-size: 2.5em;
 	text-align: center;
 }
 
 .bio h3 {
 	padding: 20px 0;
-	font-size: 2em;
+	font-size: 1.8em;
 	text-align: center;
 }
 
 .bio h4 {
 	padding: 50px 20px;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	text-align: center;
+	font-weight: bold;
 }
 
 .bio p {
@@ -41,4 +42,22 @@
 	margin-left: clamp(1vw, 0vw + 10%, 1vw);
 	}
 
+}
+@media screen and (max-width: 700px) {
+	.bio h2 {
+		font-size: 1.6em;
+	}
+
+	.bio h3 {
+		font-size: 1.4em;
+	}
+
+	.bio h4 {
+		font-size: 1em;
+
+	}
+
+	.bio p {
+		font-size: 0.9em;
+	}
 }

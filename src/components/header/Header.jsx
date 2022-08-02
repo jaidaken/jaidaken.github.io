@@ -8,7 +8,7 @@ import TypeIt from "typeit-react";
 
 function Header() {
   return (
-    <section className="header">
+    <section id="home" className="header">
       <div className="">
         <TypeIt
           className="title"

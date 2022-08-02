@@ -2,6 +2,7 @@
 	margin: auto;
 	margin-left: clamp(5vw, 0vw + 10%, 12vw);
 	padding-left: 2vw;
+	text-align: center;
 
 }
 
@@ -12,16 +13,25 @@
 
 .project-container {
 	border-left: 6px solid hsl(130, 94%, 34%) !important;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 .card-image img {
 	border-radius: 10px;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.image-div {
+	border-radius: 10px;
+	border: 2px solid lawngreen;
+	overflow: hidden;
 	max-width: calc(100% - 2vw);
-	filter: grayscale();
+	height: auto;
+
+}
+
+.image-div img {
+	filter: blur(15px);
+
 }
 .card-image h3{
 	z-index: 1;
@@ -29,7 +39,7 @@
 	color: hsl(130, 94%, 34%);
 	font-size: 2.4em;
 	position: absolute;
-	padding-left: 10px;
+	padding-left: 0px;
 	font-weight: bold;
 	text-shadow: 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0px 0px 0px rgba(206,89,55,0);
 }
@@ -60,9 +70,10 @@
 }
 
 .buttons {
-	position: absolute;
-	margin-top: -40px;
+	position: relative;
+	margin-top: -30px;
 	display: flex;
+	flex-direction: row;
 	justify-content: flex-end;
 	align-items: flex-end;
 
@@ -71,6 +82,7 @@
 .btn {
   width: min-content;
   color: var(--color-primary);
+	background-color: var(--color-bg);
 	padding: 2px;
   margin: 2px;
   border-radius: 0.4rem;

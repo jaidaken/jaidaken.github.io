@@ -1,14 +1,34 @@
 .bio {
-	padding-top: 2vh;
-	padding-left: 2vw;
 	margin: auto;
 	margin-left: clamp(5vw, 0vw + 10%, 12vw);
-	width: clamp(60vw, 0vw + 5%, 100vw);
+	padding-left: 2vw;
+	text-align: center;
+}
 
+.bio h2 {
+	padding: 20px 0 0 0;
+	font-size: 3em;
+	text-align: center;
+}
+
+.bio h3 {
+	padding: 20px 0;
+	font-size: 2em;
+	text-align: center;
+}
+
+.bio h4 {
+	padding: 50px 20px;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.bio p {
+	text-align: center;
+	padding: 0 40px 20px;
 }
 
 .bio div {
-	width: clamp(80vw, 0vw + 5%, 100vw);
 	padding-left: 10px;
 	border-left: 6px solid rgb(5, 169, 33) !important;
 }

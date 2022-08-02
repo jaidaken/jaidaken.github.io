@@ -20,7 +20,8 @@ function Nav() {
           exact="true"
           activeclassname="active"
           className="nav-link home-link"
-          to="/"
+          to="#home"
+          onClick="document.getElementById('home').scrollIntoView()"
         >
           <AiOutlineHome />
         </NavLink>
@@ -40,6 +41,7 @@ function Nav() {
           activeclassname="active"
           className="nav-link project-link"
           to="#projects"
+          onClick="document.getElementById('projects').scrollIntoView()"
         >
           <AiOutlineFundProjectionScreen />
         </NavLink>

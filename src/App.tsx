@@ -2,9 +2,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Layout from "./components/layout/Layout";
-import ContactPage from "./pages/ContactPage";
-import Home from "./pages/Home";
+import Layout from "./Components/layout/Layout";
+import ContactPage from "./Pages/ContactPage";
+import Home from "./Pages/HomePage";
 
 function App() {
   return (

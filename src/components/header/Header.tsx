@@ -1,13 +1,15 @@
-/* eslint-disable indent */
-import React from "react";
 import "./header.css";
+
 import { motion } from "framer-motion";
+import React from "react";
+import { AiFillFilePdf, AiOutlineMail } from "react-icons/ai";
 import * as bs from "react-icons/bs";
-import { AiOutlineMail, AiFillFilePdf } from "react-icons/ai";
-import TypeIt from "typeit-react";
+
 import CV from "../../assets/CV.pdf";
 
-function Header() {
+import TypeIt from "typeit-react";
+
+const Header = () => {
   return (
     <section id="home" className="header">
       <div className="">
@@ -20,7 +22,7 @@ function Header() {
             loop: false,
             loopDelay: 15000,
           }}
-          getBeforeInit={(instance) => {
+          getBeforeInit={(instance: any) => {
             instance
               .type("Hello!")
               .pause(2000)
@@ -79,4 +81,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header

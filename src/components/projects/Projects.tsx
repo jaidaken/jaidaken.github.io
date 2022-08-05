@@ -1,5 +1,7 @@
-import React from "react";
 import "./projects.css";
+
+import React from "react";
+
 import IMG1 from "../../assets/code.jpg";
 
 export default function Projects() {

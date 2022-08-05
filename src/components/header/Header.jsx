@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import * as bs from "react-icons/bs";
 import { AiOutlineMail, AiFillFilePdf } from "react-icons/ai";
 import TypeIt from "typeit-react";
+import CV from "../../assets/CV.pdf";
 
 function Header() {
   return (
@@ -57,7 +58,7 @@ function Header() {
             initial={{ x: "-60vw" }}
             animate={{ x: "0vw", opacity: [0, 1] }}
             transition={{ duration: 1, delay: 5.6 }}
-            href="https://www.linkedin.com/in/jhewitthw/"
+            href={CV}
             target="_blank"
             rel="noreferrer"
           >

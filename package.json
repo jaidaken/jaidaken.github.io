@@ -1,10 +1,11 @@
 {
   "name": "github.io",
   "version": "0.1.0",
-	"homepage": "https://jaidaken.github.io/",
+  "homepage": "https://jaidaken.github.io/",
   "private": true,
   "dependencies": {
     "framer-motion": "^6.5.1",
+    "gsap": "^3.10.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
@@ -13,8 +14,8 @@
     "typeit-react": "^2.6.0"
   },
   "scripts": {
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

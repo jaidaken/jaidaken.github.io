@@ -1,13 +1,15 @@
 {
   "name": "vite-reactts-eslint-prettier",
   "version": "0.0.0",
+	"homepage": "https://jaidaken.github.io/",
   "scripts": {
+		"predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
     "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
-    "lint": "yarn lint:format && yarn lint:fix ",
     "type-check": "tsc"
   },
   "dependencies": {
@@ -43,6 +45,5 @@
     "vite": "^3.0.4",
     "vite-tsconfig-paths": "^3.5.0"
   },
-  "pre-commit": "lint",
   "license": "MIT"
 }

@@ -1,0 +1,12 @@
+
+.contact {
+    margin: auto;
+    margin-left: auto;
+    margin-left: clamp(5vw, 0vw + 10%, 12vw);
+    padding-left: 2vw;
+    text-align: center;
+}
+
+.contact-container {
+	border-left: 6px solid hsl(130, 94%, 34%) ;
+}

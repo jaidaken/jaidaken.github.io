@@ -1,5 +1,14 @@
 import React from "react";
+import './contact.css';
 
-export default function Contact() {
-  return <div>Contact</div>;
+function Contact() {
+  return (
+  <section id="contact" className="contact">
+    <div className="contact-container">
+    <h1>Contact</h1>
+    </div>
+  </section>
+  )
 }
+
+export default Contact;

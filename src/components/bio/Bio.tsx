@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import "./bio.css";
-import React from "react";
+import React, { useRef, forwardRef } from "react";
 
 function Bio() {
   return (

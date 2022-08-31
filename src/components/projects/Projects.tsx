@@ -11,7 +11,7 @@ export default function Projects() {
         <h2 className="project-title">Projects</h2>
         <div className="cards">
 
-          <ProjectCard img={IMG1} title="Vacation Log" desc="A Full-stack app with Auth0 and database to track your vacations and visited destinations!" demo="https://trip-logger-jh.herokuapp.com/" source="https://github.com/jaidaken/trip-logger"/>
+          <ProjectCard img={IMG1} title="Vacation Log" desc="A Full-stack app with Auth0 and database to track your vacations and visited destinations!" demo="https://trip-logger-jh.herokuapp.com" source="https://github.com/jaidaken/trip-logger"/>
 
           <ProjectCard img={IMG1} title="Responsive News" desc="Practice for responsive pages" demo="https://jaidaken.github.io/responsive-news-starter/" source="https://github.com/jaidaken/responsive-news-starter"/>
 

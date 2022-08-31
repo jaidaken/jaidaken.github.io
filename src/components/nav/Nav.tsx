@@ -18,16 +18,17 @@ function Nav() {
 
   return (
     <div className="nav-div">
-      <NavLink className="pic" to="/">
+      {/* <NavLink className="pic" to="/">
         <img src={CircleMe} alt="Me" />
-      </NavLink>
+      </NavLink> */}
       <nav>
         <NavLink
           className="nav-link home-link"
           to="#home"
           onClick={scrollSmoothHandler}
         >
-          <AiOutlineHome /><p>Home</p>
+          <AiOutlineHome />
+          <p>Home</p>
         </NavLink>
 
         <NavLink
@@ -35,7 +36,8 @@ function Nav() {
           to="/#about"
           onClick={scrollSmoothHandler}
         >
-          <FiBookOpen /><p>Bio</p>
+          <FiBookOpen />
+          <p>Bio</p>
         </NavLink>
 
         <NavLink
@@ -43,7 +45,8 @@ function Nav() {
           to="#projects"
           onClick={scrollSmoothHandler}
         >
-          <AiOutlineFundProjectionScreen /><p>Projects</p>
+          <AiOutlineFundProjectionScreen />
+          <p>Projects</p>
         </NavLink>
 
         <NavLink
@@ -51,7 +54,8 @@ function Nav() {
           to="#contact"
           onClick={scrollSmoothHandler}
         >
-          <AiOutlineMessage /><p>Contact</p>
+          <AiOutlineMessage />
+          <p>Contact</p>
         </NavLink>
       </nav>
     </div>
@@ -59,25 +63,3 @@ function Nav() {
 }
 
 export default Nav;
-
-
-// const Nav = ({ refs }: any) => {
-//   const ref = React.useRef<HTMLInputElement>(null)
-
-
-//   return (
-//     <>
-//       <NavLink to="/#hero" className="selected">
-//         Hero
-//       </NavLink>
-//       <NavLink to="/#about" className="selected" onClick={scrollSmoothHandler}>
-//         About
-//       </NavLink>
-//       <NavLink to="/#projects" className="selected">
-//         Projects
-//       </NavLink>
-//     </>
-//   );
-// };
-
-// export default Nav;

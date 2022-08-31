@@ -1,7 +1,7 @@
 .nav-div {
   position:fixed;
   background: var(--color-bg-variant-3);
-  width: clamp(11vw, 11vw + 10%, 10vw);
+  width: clamp(6vw, 8vw + 10px, 10vw);
   height: 100%;
   padding: 10px;
   padding-top: 1vh;

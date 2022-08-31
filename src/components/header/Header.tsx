@@ -12,7 +12,7 @@ import TypeIt from "typeit-react";
 const Header = () => {
   return (
     <section id="home" className="header">
-      <div className="">
+      <div className="header-container">
         <TypeIt
           className="title"
           options={{

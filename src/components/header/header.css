@@ -1,19 +1,30 @@
 .header {
 	background: var(--color-bg-variant-2);
-	margin-left: clamp(10vw, 0vw + 5%, 10vw);
-	padding: 4% 2% 2%;
-	line-height: clamp(40px, 40px + 1vh, 200px);
+	/* margin-left: clamp(10vw, 0vw + 5%, 10vw);
+	line-height: clamp(40px, 40px + 1vh, 200px); */
+
+	margin: auto;
+    margin-left: auto;
+    margin-left: clamp(5vw, 0vw + 10%, 12vw);
+    padding-left: 2vw;
+	padding-top: 2vw;
 }
 
+.header-container{
+	border-left: 6px solid hsl(130, 94%, 34%) ;
+
+}
 .title {
 	font-size: clamp(3rem, 4rem + 1vw, 8rem);
+	padding-left: 2vw;
 }
 
 .links {
 	display: flex;
 	justify-content: left;
 	gap: 2rem;
-	padding-top: 4%;
+	padding-left: 2vw;
+	padding-bottom: 1vw;
 	font-size: clamp(0.1rem, 0.3rem + 4vw, 2rem);
 }
 

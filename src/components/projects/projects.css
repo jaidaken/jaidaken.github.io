@@ -40,7 +40,7 @@
 	z-index: 1;
 	transition: all 0.3s ease-in-out;
 	color: hsl(130, 94%, 34%);
-	font-size: clamp(1.2rem, -1rem + 3vw, 2rem);
+	font-size: clamp(1rem, 0.5vw + 0.875rem, 2rem);
 	position: absolute;
 	margin-left: 10px;
 	font-weight: bold;
@@ -51,10 +51,11 @@
 	z-index: 1;
 	transition: all 0.3s ease-in-out;
 	color: var(--color-white);
+	font-size: clamp(0.9rem, 0.2vw + 0.3rem, 1.2rem);
 	position: absolute;
-	padding: 70px 10px 10px 40px;
+	padding: 70px 10px 10px 30px;
+	max-width:clamp(10vw, 16vw - 0%, 30vw);
 	text-align: left;
-	max-width:500px;
 }
 .card-container:hover p,
 .card-container:hover h2 {
@@ -65,7 +66,7 @@
 /* .card-image, */
 .card-container {
 	display: inline-block;
-	width: clamp(20vw, 25vw - 0%, 30vw);
+	width: clamp(5vw, 15vw + 10%, 20vw);
 	margin: 0;
 	padding: 20px;
 	
@@ -136,10 +137,6 @@
  color: var(--color-bg);
 }
 
-img {
-	object-fit:contain;
-}
-
 @media screen and (max-width: 1300px) {
 
 	.card-container{
@@ -148,6 +145,11 @@ img {
 
 	.card-btn {
 		margin-right: 0px;
+	}
+	.card-desc {
+		padding: 50px 10px 10px 20px;
+		max-width:200px;
+		max-height: 240px;
 	}
 }
 @media screen and (max-width: 1024px) {
@@ -161,6 +163,12 @@ img {
 	}
 	.card-btn {
 		margin-right: 0px;
+	}
+
+	.card-desc {
+		padding: 50px 10px 10px 20px;
+		max-width:clamp(10vw, 30vw - 0%, 40vw);
+		max-height: 240px;
 	}
 }
 
@@ -177,6 +185,11 @@ img {
 
 	.card-btn {
 		margin-right: 0px;
+	}
+	.card-desc {
+		padding: 50px 10px 10px 20px;
+		max-width:clamp(10vw, 60vw - 0%, 60vw);
+		max-height: 240px;
 	}
 }
 

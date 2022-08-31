@@ -11,7 +11,7 @@
 .nav-link {
   margin: auto;
   font-size: clamp(1.7rem, 1rem + 2vw, 2rem);
-  margin-bottom: 20px;
+  margin-top: 4vh;
   text-decoration: none;
   display: flex;
   justify-content: left;
@@ -25,9 +25,7 @@
 
 .pic {
   display: block;
-  margin: 8px;
 }
-
 .nav-div img {
   display: block;
   width: 100%;
@@ -44,6 +42,10 @@
     flex-direction: column;
     align-items: center;
     gap: 0px;
+  }
+  .nav-div {
+    padding: 4px;
+    padding-top: 1vh;
   }
 }
 

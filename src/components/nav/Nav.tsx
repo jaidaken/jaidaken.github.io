@@ -24,28 +24,28 @@ function Nav() {
           className="nav-link home-link"
           to="#home"
         >
-          <AiOutlineHome />
+          <AiOutlineHome /><p>Home</p>
         </NavLink>
 
         <NavLink
           className="nav-link about-link"
           to="#about"
         >
-          <FiBookOpen />
+          <FiBookOpen /><p>Bio</p>
         </NavLink>
 
         <NavLink
           className="nav-link project-link"
           to="#projects"
         >
-          <AiOutlineFundProjectionScreen />
+          <AiOutlineFundProjectionScreen /><p>Projects</p>
         </NavLink>
 
         <NavLink
           className="nav-link contact-link"
           to="/contact"
         >
-          <AiOutlineMessage />
+          <AiOutlineMessage /><p>Contact</p>
         </NavLink>
       </nav>
     </div>

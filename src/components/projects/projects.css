@@ -56,8 +56,10 @@
 	text-align: left;
 	max-width:500px;
 }
-.card-container:hover p {
+.card-container:hover p,
+.card-container:hover h2 {
 	color: hsla(0, 0%, 100%, 0);
+	text-shadow: none;
 }
 
 /* .card-image, */

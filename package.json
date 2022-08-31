@@ -4,7 +4,7 @@
 	"homepage": "https://jaidaken.github.io/",
   "scripts": {
 		"predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "cp 404.html dist/ && gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",

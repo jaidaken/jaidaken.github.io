@@ -16,9 +16,9 @@ function Nav() {
 	const executeScroll = () => (ref:any) => window.scrollTo(0, ref.current.offsetTop)
 	return (
     <div className="nav-div">
-      <Link className="pic" to="/">
+      <NavLink className="pic" to="/">
         <img src={CircleMe} alt="Me" />
-      </Link>
+      </NavLink>
       <nav>
         <NavLink
           className="nav-link home-link"

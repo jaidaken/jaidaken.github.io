@@ -1,8 +1,8 @@
 import React from "react";
 
-import Bio from "../../Components/bio/Bio";
+import Bio from "../bio/Bio";
 import Header from "../../Components/header/Header";
-import Projects from "../../Components/projects/Projects";
+import Projects from "../projects/Projects";
 
 export default function Home() {
   return (

@@ -13,7 +13,8 @@
 :root {
   --color-bg: hsl(240, 19%, 10%) ;
   --color-bg-variant:hsl(240, 21%, 16%)  ;
-  --color-bg-variant-2:hsl(240, 22%, 12%)  ;
+  --color-bg-variant-2:hsl(240, 21%, 14%)  ;
+  --color-bg-variant-3:hsl(240, 18%, 17%)  ;
   --color-primary:hsl(123, 72%, 46%) ;
   --color-primary-variant:hsl(123, 78%, 33%) ;
   --color-white:hsl(0, 0%, 85%) ;
@@ -35,6 +36,7 @@ html {
 }
 
 body {
+  
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
@@ -43,6 +45,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 1900px;
+  margin: auto;
+}
+
+.layout {
+  background-color: var(--color-bg-variant);
 }
 
 code {

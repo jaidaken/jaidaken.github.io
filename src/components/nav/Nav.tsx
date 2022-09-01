@@ -7,11 +7,7 @@ import {
   AiOutlineMenu
 } from "react-icons/ai";
 import { FiBookOpen } from "react-icons/fi";
-// import { NavLink } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-
-// import CircleMe from "assets/circleme.png";
-
 
 function Nav() {
 
@@ -40,7 +36,8 @@ function Nav() {
     open: { 
       opacity: 1,
       transition: {
-        delay: 0.9
+        delay: 0.4,
+        duration: 0.2
       }
     
     }
@@ -78,7 +75,7 @@ function Nav() {
             initial={{ width: 0 }}
             animate={{
               width: 160,
-              transition: { duration: 0.6 }
+              transition: { duration: 0.3 }
             }}
             exit={{
               width: 55,
@@ -97,7 +94,6 @@ function Nav() {
                   <motion.a
                     key={id}
                     href={to}
-                    whileHover={{ scale: 1.1 }}
                     variants={itemVariants}
                     onClick={scrollSmoothHandler}
                   >

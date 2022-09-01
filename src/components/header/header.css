@@ -18,7 +18,6 @@
 	display: flex;
 	justify-content: left;
 	gap: 2rem;
-	padding-left: 2vw;
 	padding-bottom: 1vw;
 	font-size: clamp(0.1rem, 0.3rem + 4vw, 2rem);
 }

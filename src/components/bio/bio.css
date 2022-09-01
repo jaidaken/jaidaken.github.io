@@ -14,14 +14,11 @@
 	border: 5px solid var(--color-primary);
 }
 
-/* .bio-container {
+.bio-container h4 {
 	margin: auto;
 	max-width: 1000px;
-} */
-/* 
-.bio p span {
-	display:block;
-} */
+}
+
 .bio h2 {
 	padding: 20px 0 0 0;
 	font-size: 2.5em;

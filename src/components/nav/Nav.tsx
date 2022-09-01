@@ -4,6 +4,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineHome,
   AiOutlineMessage,
+  AiOutlineMenu
 } from "react-icons/ai";
 import { FiBookOpen } from "react-icons/fi";
 // import { NavLink } from "react-router-dom";
@@ -26,10 +27,10 @@ function Nav() {
 
 
   const links = [
-    { name: "Home", to: "#home", id: 1 },
-    { name: "About", to: "#about", id: 2 },
-    { name: "Projects", to: "#projects", id: 3 },
-    { name: "Contact", to: "#contact", id: 4 }
+    { name: "Home", icon: <AiOutlineHome fontSize={32} />, to: "#home", id: 1 },
+    { name: "About", icon: <FiBookOpen fontSize={32}/>, to: "#about", id: 2 },
+    { name: "Projects", icon: <AiOutlineFundProjectionScreen fontSize={32}/>, to: "#projects", id: 3 },
+    { name: "Contact", icon: <AiOutlineMessage fontSize={32}/>, to: "#contact", id: 4 }
   ];
 
   const itemVariants = {
@@ -67,11 +68,7 @@ function Nav() {
       onMouseLeave={toggleHoverMenu}
     >
       <div className="icon-menu">
-        <a href="#home" onClick={scrollSmoothHandler} ><AiOutlineHome /></a>
-        <a href="#about" onClick={scrollSmoothHandler} ><FiBookOpen /></a>
-        <a href="#projects" onClick={scrollSmoothHandler} ><AiOutlineFundProjectionScreen /></a>
-        <a href="#contact" onClick={scrollSmoothHandler} ><AiOutlineMessage /></a>
-        
+        <AiOutlineMenu />
         
         
       </div>
@@ -80,7 +77,7 @@ function Nav() {
           <motion.aside
             initial={{ width: 0 }}
             animate={{
-              width: 150,
+              width: 160,
               transition: { duration: 0.6 }
             }}
             exit={{
@@ -96,7 +93,7 @@ function Nav() {
               variants={sideVariants}
             >
               <div className="link-div">
-                {links.map(({ name, to, id }) => (
+                {links.map(({ name, icon, to, id }) => (
                   <motion.a
                     key={id}
                     href={to}
@@ -104,7 +101,7 @@ function Nav() {
                     variants={itemVariants}
                     onClick={scrollSmoothHandler}
                   >
-                    {name}
+                    {icon} <span>{name}</span>
                   </motion.a>
                 ))}
               </div>

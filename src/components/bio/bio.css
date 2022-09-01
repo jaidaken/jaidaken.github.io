@@ -7,6 +7,7 @@
 
 .bio img {
 	width: 50vw;
+	max-width: 600px;
 	height: auto;
 	margin: 20px 0 40px;
 	border-radius: 100vw;

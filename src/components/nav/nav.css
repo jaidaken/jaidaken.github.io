@@ -5,37 +5,34 @@
   height: 100%;
   min-width: 55px;
   text-align: left;
+  box-shadow: 5px 0px 10px hsla(0, 0%, 0%, 0.284);
+}
+
+.container {
+  margin: 0 10px;
 }
 
 .link-div {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   padding-top: 13px;
-  padding-left: 35px;
-  gap: 34px;
+  gap: 30px;
 }
 
-.link-div a {
-  color: var(--color-white);
+.link-div span {
+  position:relative;
+  top: -7px;
 }
 
 .icon-menu {
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
-  position: absolute;
-  flex-direction: column;
   padding-top: 2px;
   padding-left: 10px;
-  gap: 8px;
   color: var(--color-primary);
   font-size: 2em;
-}
-
-@media screen and (max-width: 1300px) {
-}
-
-@media screen and (max-width: 1024px) {
 }
 
 @media screen and (max-width: 700px) {

@@ -19,7 +19,7 @@ function Bio() {
           suited to the needs of my clients.</span>
         </p>
         <h3>Who am I?</h3>
-        <img height="400" src={CircleMe} alt="A Picture of Jamie Hewitt" />
+        <img src={CircleMe} alt="A Picture of Jamie Hewitt" />
         <p>
           I am currently training in
           hopes of a career change to web development. While I am currently a barista and

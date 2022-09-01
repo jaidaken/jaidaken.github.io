@@ -8,3 +8,17 @@
 .contact-container {
 	border-left: 6px solid hsl(130, 94%, 34%) ;
 }
+
+/* ===========MEDIA QUERIES (medium)===========*/
+
+@media screen and (max-width: 1024px) {
+	.contact {
+		margin-left: 50px;
+	}
+
+}
+@media screen and (max-width: 700px) {
+	.contact {
+		margin-left: 0px;
+	}
+}

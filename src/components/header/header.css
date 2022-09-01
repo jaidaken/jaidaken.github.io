@@ -7,11 +7,11 @@
 
 .header-container{
 	border-left: 6px solid hsl(130, 94%, 34%) ;
+	padding-left: 2vw;
 
 }
 .title {
-	font-size: clamp(3rem, 4rem + 1vw, 8rem);
-	padding-left: 2vw;
+	font-size: clamp(2.8rem, -0.4286rem + 6vw, 5rem);
 }
 
 .links {
@@ -27,6 +27,12 @@
 
 @media screen and (max-width: 1024px) {
 	.header {
-		padding: 5%;
+		margin-left: 50px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.header {
+		margin-left: 0px;
 	}
 }

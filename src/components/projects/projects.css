@@ -140,7 +140,6 @@
 @media screen and (max-width: 1300px) {
 
 	.card-container{
-		width: clamp(20vw, 25vw - 0%, 30vw);
 	}
 
 	.card-btn {
@@ -154,15 +153,11 @@
 }
 @media screen and (max-width: 1024px) {
 	.projects {
-		padding-left: 15vw;
-		margin-left: clamp(1vw, 0vw + 10%, 1vw);
+		margin-left: 50px;
 	}
 
 	.card-container{
 		width: clamp(30vw, 40vw - 0%, 50vw);
-	}
-	.card-btn {
-		margin-right: 0px;
 	}
 
 	.card-desc {
@@ -173,14 +168,12 @@
 }
 
 @media screen and (max-width: 700px) {
+	.projects {
+		margin-left: 0px;
+	}
+
 	.card-container{
 		width: clamp(50vw, 80vw - 0%, 80vw);
-	}
-	.project-container {
-		border-left: none !important;
-	}
-	.projects {
-		padding-left: 10vw;
 	}
 
 	.card-btn {

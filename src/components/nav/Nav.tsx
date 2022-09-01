@@ -67,22 +67,25 @@ function Nav() {
       onMouseLeave={toggleHoverMenu}
     >
       <div className="icon-menu">
-        <AiOutlineHome />
-        <FiBookOpen />
-        <AiOutlineFundProjectionScreen />
-        <AiOutlineMessage />
+        <a href="#home" onClick={scrollSmoothHandler} ><AiOutlineHome /></a>
+        <a href="#about" onClick={scrollSmoothHandler} ><FiBookOpen /></a>
+        <a href="#projects" onClick={scrollSmoothHandler} ><AiOutlineFundProjectionScreen /></a>
+        <a href="#contact" onClick={scrollSmoothHandler} ><AiOutlineMessage /></a>
+        
+        
+        
       </div>
       <AnimatePresence>
         {open && (
           <motion.aside
             initial={{ width: 0 }}
             animate={{
-              width: 140,
-              transition: { delay: 0.2, duration: 0.9 }
+              width: 150,
+              transition: { duration: 0.6 }
             }}
             exit={{
-              width: 0,
-              transition: { delay: 0.9, duration: 0.9 }
+              width: 55,
+              transition: { delay: 0.9, duration: 0.6 }
             }}
           >
             <motion.div

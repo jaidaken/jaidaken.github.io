@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import "./bio.css";
 import React, { useRef, forwardRef } from "react";
+import CircleMe from 'assets/circleme.png';
 
 function Bio() {
   return (
@@ -18,6 +19,7 @@ function Bio() {
           applications suited to the needs of the clients.
         </p>
         <h3>Who am I?</h3>
+        <img height="400" src={CircleMe} alt="A Picture of Jamie Hewitt" />
         <p>
           I am currently studying at&nbsp;
           <a href="https://www.thejump.tech">The Jump: Coding Bootcamp</a> in

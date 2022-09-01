@@ -16,14 +16,18 @@
   gap: 34px;
 }
 
+.link-div a {
+  color: var(--color-white);
+}
+
 .icon-menu {
   margin-top: 30px;
   display: flex;
   position: absolute;
   flex-direction: column;
-  padding-top: 6px;
+  padding-top: 2px;
   padding-left: 10px;
-  gap: 30px;
+  gap: 8px;
   color: var(--color-primary);
   font-size: 2em;
 }

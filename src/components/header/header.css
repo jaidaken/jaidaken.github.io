@@ -1,11 +1,6 @@
 .header {
 	background: var(--color-bg-variant-2);
-	/* margin-left: clamp(10vw, 0vw + 5%, 10vw);
-	line-height: clamp(40px, 40px + 1vh, 200px); */
-
-	margin: auto;
-    margin-left: auto;
-    margin-left: clamp(5vw, 0vw + 10%, 12vw);
+	margin-left: 40px;
     padding-left: 2vw;
 	padding-top: 2vw;
 }

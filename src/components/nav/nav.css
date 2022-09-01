@@ -1,55 +1,39 @@
 .nav-div {
+  z-index: 1;
   position:fixed;
   background: var(--color-bg-variant-3);
-  width: clamp(6vw, 8vw + 10px, 10vw);
   height: 100%;
-  padding: 10px;
-  padding-top: 1vh;
-  text-align: center;
+  min-width: 55px;
+  text-align: left;
 }
 
-.nav-link {
-  margin: auto;
-  font-size: clamp(1.7rem, 1rem + 2vw, 2rem);
-  margin-top: 4vh;
-  text-decoration: none;
+.link-div {
+  margin-top: 30px;
   display: flex;
-  justify-content: left;
-  gap: 10px;
-  overflow: visible;
+  flex-direction: column;
+  padding-top: 13px;
+  padding-left: 35px;
+  gap: 34px;
 }
 
-.nav-link p {
-  font-size: clamp(0.2rem, 0.2rem + 1vw, 1.5rem);
+.icon-menu {
+  margin-top: 30px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  padding-top: 6px;
+  padding-left: 10px;
+  gap: 30px;
+  color: var(--color-primary);
+  font-size: 2em;
 }
 
-.pic {
-  display: block;
-}
-.nav-div img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 @media screen and (max-width: 1300px) {
-
 }
 
-  
 @media screen and (max-width: 1024px) {
-  .nav-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0px;
-  }
-  .nav-div {
-    padding: 4px;
-    padding-top: 1vh;
-  }
 }
 
 @media screen and (max-width: 700px) {
-  
+
 }

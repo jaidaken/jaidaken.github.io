@@ -11,6 +11,14 @@
 	border: 5px solid var(--color-primary);
 }
 
+/* .bio-container {
+	margin: auto;
+	max-width: 1000px;
+} */
+/* 
+.bio p span {
+	display:block;
+} */
 .bio h2 {
 	padding: 20px 0 0 0;
 	font-size: 2.5em;
@@ -33,6 +41,8 @@
 .bio p {
 	text-align: center;
 	padding: 0 40px 20px;
+	max-width: 1100px;
+	margin: auto;
 }
 
 .bio div {

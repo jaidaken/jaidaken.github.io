@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import Matrix from './Matrix';
+import Matrix from './Matrix.jsx';
 import './transition.css';
 import { MouseParallax, ScrollParallax } from "react-just-parallax";
 

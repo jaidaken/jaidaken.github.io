@@ -5,7 +5,7 @@ let largerThanAnyPageSize = 9999999
 let largerThanWindow = 2
 
 class Matrix extends React.Component {
-    constructor(props:any) {
+    constructor(props) {
         super(props)
 
         this.state = {}
@@ -15,7 +15,7 @@ class Matrix extends React.Component {
 
     componentDidMount() {
         this.setState({}, () => {
-            let columns:any = []
+            let columns = []
             let context = this.refs.canvas.getContext('2d')
             let size = this.props.colSize
 

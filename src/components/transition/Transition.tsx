@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
-import Matrix from './Matrix.jsx';
+
+import Matrix from './matrix/Matrix.jsx';
 import './transition.css';
 import { MouseParallax, ScrollParallax } from "react-just-parallax";
 
@@ -29,7 +30,7 @@ function Transition() {
 					</defs>
 					<rect fill="url(#0)" height="100" width="100%" />
 				</svg>
-				<MouseParallax isAbsolutelyPositioned strength={0.1}>
+				<MouseParallax isAbsolutelyPositioned strength={0.03}>
 					<div className="matrix-bottom first">
 
 						<Matrix
@@ -49,7 +50,7 @@ function Transition() {
 
 					</div>
 				</MouseParallax>
-				<MouseParallax isAbsolutelyPositioned strength={0.2}>
+				<MouseParallax isAbsolutelyPositioned strength={0.1}>
 					<div className="matrix-second second">
 
 						<Matrix
@@ -69,7 +70,7 @@ function Transition() {
 
 					</div>
 				</MouseParallax>
-				<MouseParallax isAbsolutelyPositioned strength={0.3}>
+				<MouseParallax isAbsolutelyPositioned strength={0.2}>
 					<div className="matrix-third">
 
 						<Matrix

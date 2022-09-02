@@ -38,7 +38,7 @@ function Transition() {
 							backgroundColor="rgba(0,0,0,0)"
 							fontSize={8}
 							colSize={10}
-							width={1400}
+							width={2500}
 							height={1500}
 							speed={0.4}
 							fadeRate={0.2}
@@ -58,7 +58,7 @@ function Transition() {
 							backgroundColor='rgba(0,0,0,0)'
 							fontSize={12}
 							colSize={20}
-							width={1400}
+							width={2500}
 							height={1500}
 							speed={0.2}
 							fadeRate={0.2}
@@ -78,7 +78,7 @@ function Transition() {
 							backgroundColor='rgba(0,0,0,0)'
 							fontSize={18}
 							colSize={30}
-							width={1400}
+							width={2500}
 							height={1500}
 							speed={0.3}
 							fadeRate={0.18}
@@ -98,7 +98,7 @@ function Transition() {
 							backgroundColor='rgba(0,0,0,0)'
 							fontSize={28}
 							colSize={30}
-							width={1400}
+							width={2500}
 							height={1500}
 							speed={0.4}
 							fadeRate={0.15}

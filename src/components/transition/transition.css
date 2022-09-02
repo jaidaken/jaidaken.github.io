@@ -1,0 +1,47 @@
+.bio img {
+	width: 50vw;
+	max-width: 600px;
+	height: auto;
+	margin: 20px 0 40px;
+	border-radius: 100vw;
+	border: 5px solid var(--color-primary);
+}
+.matrix {
+	position: relative;
+	height: 300px;
+	overflow: hidden;
+	margin: auto;
+	margin-left: 40px;
+	padding-left: 2vw;
+}
+.matrix-container {
+	border-left: 6px solid rgb(5, 169, 33) !important;
+	position: relative;
+	overflow: hidden;
+}
+
+.topgrad {
+	position: relative;
+	z-index: 10;
+}
+.bottomgrad {
+	position: relative;
+	z-index: 10;
+	margin-top: 100px;
+}
+
+.matrix-bottom {
+	position: absolute;
+}
+
+.matrix-second {
+	position: absolute;
+}
+
+.matrix-third {
+	position: absolute;
+}
+
+.matrix-last {
+	position: absolute;
+}

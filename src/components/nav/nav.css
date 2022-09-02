@@ -1,5 +1,5 @@
 .nav-div {
-  z-index: 1;
+  z-index: 999;
   position:fixed;
   background: var(--color-bg-variant-3);
   height: 100%;

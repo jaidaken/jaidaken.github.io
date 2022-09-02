@@ -6,14 +6,14 @@ import Layout from "./Components/layout/Layout";
 import Home from "./Pages/HomePage";
 
 function App() {
-  
+
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        {/* <Route path="/contact" element={<ContactPage />} /> */}
-      </Route>
-    </Routes>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            {/* <Route path="/contact" element={<ContactPage />} /> */}
+          </Route>
+        </Routes>
   );
 }
 

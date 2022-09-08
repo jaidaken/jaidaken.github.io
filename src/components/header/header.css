@@ -1,0 +1,91 @@
+.header {
+	/* background: var(--color-bg-variant-2); */
+	position: relative;
+	overflow: hidden;
+	background-color: hsla(296, 67%, 86%, 0.666);
+	height: 120vh;
+	max-height: 1600px;
+	width: 100vw;
+}
+
+.blob1 {
+	/* a perfectly square <svg> element that will never overflow the viewport */
+	position: absolute;
+	width: 100vw;
+	filter: blur(80px);
+}
+
+
+.blob2 {
+	/* a perfectly square <svg> element that will never overflow the viewport */
+	position: absolute;
+	width: 50%;
+	filter: blur(80px);
+}
+
+.blob3 {
+	/* a perfectly square <svg> element that will never overflow the viewport */
+	position: absolute;
+	width: 50%;
+	filter: blur(80px);
+}
+
+.header-container {
+	/* border-left: 6px solid hsl(130, 94%, 34%,) ; */
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 500px;
+	color: hsla(0, 0%, 18%, 0.666);
+	z-index: 100;
+}
+
+.header-container h1 {
+	font-size: 5em;
+}
+
+.header-container a {
+	color: hsla(0, 0%, 18%, 0.666);
+}
+
+.title {
+	font-size: clamp(2.8rem, -0.4286rem + 6vw, 5rem);
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	padding-bottom: 1vw;
+	font-size: clamp(0.1rem, 0.3rem + 4vw, 2rem);
+}
+
+.seperator {
+	background: linear-gradient(hsla(240, 21%, 16%, 0) 0%, hsla(240, 21%, 16%, 0.1) 20%, hsla(240, 21%, 16%, 0.5) 60%, hsl(240, 21%, 16%) 100%);
+	position: absolute;
+	height: 5vh;
+	width: 100%;
+	bottom: 0;
+}
+
+/* ===========MEDIA QUERIES (medium)===========*/
+
+@media screen and (max-width: 1024px) {
+	.header {
+		margin-left: 50px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.header {
+		margin-left: 0px;
+	}
+
+	.header-container {
+		margin-top: 20%;
+	}
+
+	.header-container h1 {
+		font-size: 1em;
+	}
+}

@@ -86,4 +86,19 @@
 	.header-container h1 {
 		font-size: 3em;
 	}
+	.blob1 {
+		width: 90%;
+		height: 100%;
+	}
+	
+	
+	.blob2 {
+		width: 50%;
+		height: 50%;
+	}
+	
+	.blob3 {
+		width: 30%;
+		height: 50%;
+	}
 }

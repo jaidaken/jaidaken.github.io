@@ -1,4 +1,4 @@
-import "./header.scss";
+import "./header.css";
 
 import { motion } from "framer-motion";
 import React from "react";

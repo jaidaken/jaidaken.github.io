@@ -3,9 +3,9 @@
 	position: relative;
 	overflow: hidden;
 	background-color: hsla(296, 67%, 86%, 0.666);
-	height: 120vh;
+	height: 100vh;
 	max-height: 1600px;
-	width: 100vw;
+	width: 100%;
 }
 
 .blob1 {
@@ -31,17 +31,20 @@
 }
 
 .header-container {
-	/* border-left: 6px solid hsl(130, 94%, 34%,) ; */
-	position: relative;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 500px;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	color: hsla(0, 0%, 18%, 0.666);
 	z-index: 100;
 }
 
 .header-container h1 {
+	text-align: center;
+	position: relative;
 	font-size: 5em;
+	z-index: 10;
 }
 
 .header-container a {
@@ -55,9 +58,10 @@
 .links {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	gap: 2rem;
 	padding-bottom: 1vw;
-	font-size: clamp(0.1rem, 0.3rem + 4vw, 2rem);
+	font-size: clamp(0.4rem, 0.6rem + 4vw, 2rem);
 }
 
 .seperator {
@@ -71,21 +75,15 @@
 /* ===========MEDIA QUERIES (medium)===========*/
 
 @media screen and (max-width: 1024px) {
-	.header {
-		margin-left: 50px;
+
+	.header-container h1 {
+		font-size: 4em;
 	}
 }
 
 @media screen and (max-width: 700px) {
-	.header {
-		margin-left: 0px;
-	}
-
-	.header-container {
-		margin-top: 20%;
-	}
 
 	.header-container h1 {
-		font-size: 1em;
+		font-size: 3em;
 	}
 }

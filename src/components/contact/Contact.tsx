@@ -9,7 +9,7 @@ function Contact() {
 			<motion.section
 				id="contact"
 				className="contact"
-				initial={{ y: "100%" }}
+				initial={{ y: "100%", opacity: 0  }}
 				animate={{ y: "0%", opacity: [0, 1], transition: { duration: 0.2, ease: "linear" } }}
 				exit={{ y: "-100%", transition: { duration: 0.2, ease: "linear" }}}
 			>

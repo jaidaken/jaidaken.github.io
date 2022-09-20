@@ -5,13 +5,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden;
+	overflow:hidden;
 padding-top: 10vh;
 }
 
-.bio-container{
-	overflow: hidden;
-}
 .bio img {
 	width: 50vw;
 	max-width: 600px;

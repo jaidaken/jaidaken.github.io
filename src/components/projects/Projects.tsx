@@ -11,8 +11,8 @@ export default function Projects() {
 			<motion.section
 				id="projects"
 				className="projects"
-				initial={{ y: "100%" }}
-				animate={{ y: "0%", opacity: [0, 1], transition: { duration: 0.2, ease: "linear" } }}
+				initial={{ y: "100%", opacity: 0  }}
+				animate={{ y: "0%", opacity: 1, transition: { duration: 0.2, ease: "linear" } }}
 				exit={{ y: "-100%", transition: { duration: 0.2, ease: "linear" }}}
 			>
 				<div className="project-container">

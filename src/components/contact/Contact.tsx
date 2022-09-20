@@ -1,6 +1,8 @@
 import React from "react";
 import './contact.css';
 import { motion } from "framer-motion"
+import { BsArrowDownSquare } from "react-icons/bs"
+import { Link } from "react-router-dom";
 
 function Contact() {
 	return (
@@ -13,7 +15,15 @@ function Contact() {
 			>
 				<div className="contact-container">
 					<h1>Contact</h1>
-				</div>
+			</div>
+			<motion.div
+					className="next"
+					initial={{ y: "60vh" }}
+					animate={{ y: "0vh", opacity: [0, 1] }}
+					transition={{ duration: 1, delay: 3 }}
+				>
+					<Link to="/"> <BsArrowDownSquare /> </Link>
+				</motion.div>
 			</motion.section>
 	)
 }

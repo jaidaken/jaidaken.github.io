@@ -11,15 +11,3 @@ padding-top: 10vh;
 .contact-container {
 	max-width: 1200px;
 }
-
-/* ===========MEDIA QUERIES (medium)===========*/
-
-@media screen and (max-width: 1024px) {
-	.contact {
-	}
-
-}
-@media screen and (max-width: 700px) {
-	.contact {
-	}
-}

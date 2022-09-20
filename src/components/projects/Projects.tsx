@@ -3,6 +3,8 @@ import "./projects.css";
 import { motion } from "framer-motion"
 import IMG1 from "../../assets/code.jpg";
 import ProjectCard from "./projectCard/ProjectCard";
+import { BsArrowDownSquare } from "react-icons/bs"
+import { Link } from "react-router-dom";
 
 export default function Projects() {
 	return (
@@ -29,7 +31,15 @@ export default function Projects() {
 
 						<ProjectCard img={IMG1} title="Full stack app" desc="test" demo="https://github.com" source="https://github.com" />
 
-					</div>
+				</div>
+				<motion.div
+					className="next"
+					initial={{ y: "60vh" }}
+					animate={{ y: "0vh", opacity: [0, 1] }}
+					transition={{ duration: 1, delay: 3 }}
+				>
+					<Link to="/contact"> <BsArrowDownSquare /> </Link>
+				</motion.div>
 				</div>
 			</motion.section>
 	);

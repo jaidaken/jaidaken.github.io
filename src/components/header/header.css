@@ -63,10 +63,6 @@
 	z-index: 1;
 }
 
-.header-container a {
-	color: var(--color-light);
-}
-
 .title {
 	font-size: clamp(2.8rem, -0.4286rem + 6vw, 5rem);
 }
@@ -85,6 +81,7 @@
 	text-align: center;
 	font-size: 3rem;
 	z-index: 1;
+	color: var(--color-primary);
 }
 
 

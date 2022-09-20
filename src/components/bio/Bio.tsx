@@ -1,7 +1,8 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import "./bio.css";
 import { motion } from "framer-motion"
-import CircleMe from 'assets/circleme.png';
+import { BsArrowDownSquare } from "react-icons/bs"
+import { Link } from "react-router-dom";
 
 function Bio() {
 	return (
@@ -29,7 +30,15 @@ function Bio() {
 						a store and all that this entails. I am an avid lover of tech and
 						computers and believe this passion, mixed with my experience will put
 						me in a great position to be an effective member of any team.
-					</p>
+				</p>
+				<motion.div
+					className="next"
+					initial={{ y: "60vh" }}
+					animate={{ y: "0vh", opacity: [0, 1] }}
+					transition={{ duration: 1, delay: 3 }}
+				>
+					<Link to="/projects"> <BsArrowDownSquare /> </Link>
+				</motion.div>
 				</div>
 			</motion.section>
 	);

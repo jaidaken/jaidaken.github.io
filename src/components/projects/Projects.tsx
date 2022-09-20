@@ -12,8 +12,8 @@ export default function Projects() {
 				id="projects"
 				className="projects"
 				initial={{ y: "100%" }}
-				animate={{ y: "0%", opacity: [0, 1] }}
-				exit={{ y: "-100%", transition: { duration: 0.2 } }}
+				animate={{ y: "0%", opacity: [0, 1], transition: { duration: 0.2, ease: "linear" } }}
+				exit={{ y: "-100%", transition: { duration: 0.2, ease: "linear" }}}
 			>
 				<div className="project-container">
 					<h2 className="project-title">Projects</h2>

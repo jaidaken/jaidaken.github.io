@@ -10,8 +10,8 @@ function Bio() {
 				id="about"
 				className="bio"
 				initial={{ y: "100%" }}
-				animate={{ y: "0%", opacity: [0, 1] }}
-				exit={{ y: "-100%", transition: { duration: 0.2 } }}
+				animate={{ y: "0%", opacity: [0, 1], transition: { duration: 0.2, ease: "linear" } }}
+				exit={{ y: "-100%", transition: { duration: 0.2, ease: "linear" } }}
 			>
 			<div className="bio-container">
 			<h2 className="bio-title">About Me</h2>

@@ -14,8 +14,8 @@ const Header = () => {
 		<motion.section
 			id="home" className="header"
 			initial={{ opacity: 0 }}
-			animate={{ opacity: [0, 1] }}
-			exit={{ y: "-100%", transition: { duration: 0.2 } }}
+			animate={{ opacity: [0, 1], transition: { duration: 0.2, ease: "linear" } }}
+			exit={{ y: "-100%", transition: { duration: 0.2, ease: "linear" } }}
 		>
 			<div className="header-container">
 				<motion.h1

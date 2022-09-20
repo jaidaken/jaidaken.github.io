@@ -43,35 +43,3 @@
 	max-width: 1100px;
 	margin: auto;
 }
-/* ===========MEDIA QUERIES (medium)===========*/
-
-@media screen and (max-width: 1024px) {
-	.bio {
-		margin-left: 50px;
-	}
-
-}
-@media screen and (max-width: 700px) {
-	.bio {
-		margin-left: 0px;
-	}
-	.bio div {
-	}
-
-	.bio h2 {
-		font-size: 1.6em;
-	}
-
-	.bio h3 {
-		font-size: 1.4em;
-	}
-
-	.bio h4 {
-		font-size: 1em;
-
-	}
-
-	.bio p {
-		font-size: 0.9em;
-	}
-}

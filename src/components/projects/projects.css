@@ -8,7 +8,7 @@ padding-top: 10vh;
 }
 
 .project-container {
-	max-width: 1200px;
+	max-width: 1600px;
 }
 
 .project-title {
@@ -41,7 +41,6 @@ padding-top: 10vh;
 	z-index: 1;
 	transition: all 0.3s ease-in-out;
 	color: var(--color-primary);
-	font-size: clamp(1rem, 0.5vw + 0.875rem, 2rem);
 	position: absolute;
 	margin-left: 10px;
 	font-weight: bold;
@@ -51,11 +50,11 @@ padding-top: 10vh;
 .card-desc {
 	z-index: 1;
 	transition: all 0.3s ease-in-out;
+	width: 300px;
 	color: var(--color-white);
-	font-size: clamp(0.9rem, 0.2vw + 0.3rem, 1.2rem);
+	font-size: 1rem;
 	position: absolute;
 	padding: 70px 10px 10px 30px;
-	max-width:clamp(10vw, 16vw - 0%, 30vw);
 	text-align: left;
 }
 .card-container:hover p,
@@ -68,7 +67,7 @@ padding-top: 10vh;
 /* .card-image, */
 .card-container {
 	display: inline-block;
-	width: clamp(5vw, 15vw + 10%, 20vw);
+	width: 500px;
 	margin: 0;
 	padding: 20px;
 
@@ -139,51 +138,27 @@ padding-top: 10vh;
  color: var(--color-bg);
 }
 
-@media screen and (max-width: 1300px) {
-
-	.card-container{
-	}
-
-	.card-btn {
-		margin-right: 0px;
-	}
-	.card-desc {
-		padding: 50px 10px 10px 20px;
-		max-width:200px;
-		max-height: 240px;
-	}
-}
 @media screen and (max-width: 1024px) {
-	.projects {
-		margin-left: 50px;
-	}
-
 	.card-container{
-		width: clamp(30vw, 40vw - 0%, 50vw);
+		width: 400px;
+		min-width: 300px;
 	}
 
 	.card-desc {
 		padding: 50px 10px 10px 20px;
-		max-width:clamp(10vw, 30vw - 0%, 40vw);
+		max-width:500px;
 		max-height: 240px;
 	}
 }
 
 @media screen and (max-width: 700px) {
-	.projects {
-		margin-left: 0px;
-	}
 
 	.card-container{
-		width: clamp(50vw, 80vw - 0%, 80vw);
-	}
-
-	.card-btn {
-		margin-right: 0px;
+		width: 150px;
 	}
 	.card-desc {
 		padding: 50px 10px 10px 20px;
-		max-width:clamp(10vw, 60vw - 0%, 60vw);
+		max-width:200px;
 		max-height: 240px;
 	}
 }

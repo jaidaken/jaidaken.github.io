@@ -1,18 +1,19 @@
 .projects {
-	margin: auto;
-	margin-left: 40px;
-	padding-left: 2vw;
-	text-align: center;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+padding-top: 10vh;
+}
 
+.project-container {
+	max-width: 1200px;
 }
 
 .project-title {
 	font-size: 3em;
-	padding-bottom: 20px;
-}
-
-.project-container {
-	border-left: 6px solid hsl(130, 94%, 34%) ;
+	text-align: center;
 }
 
 /* .card-image img,  */
@@ -24,7 +25,7 @@
 /* .image-div, */
 .card-img-div {
 	border-radius: 10px;
-	border: 2px solid lawngreen;
+	border: 2px solid var(--color-primary);
 	overflow: hidden;
 	max-width: calc(100% - 2vw);
 	height: 260px;
@@ -39,7 +40,7 @@
 .card-title {
 	z-index: 1;
 	transition: all 0.3s ease-in-out;
-	color: hsl(130, 94%, 34%);
+	color: var(--color-primary);
 	font-size: clamp(1rem, 0.5vw + 0.875rem, 2rem);
 	position: absolute;
 	margin-left: 10px;
@@ -59,7 +60,8 @@
 }
 .card-container:hover p,
 .card-container:hover h2 {
-	color: hsla(0, 0%, 100%, 0);
+	color: var(--color-white);
+	font-weight: bold;
 	text-shadow: none;
 }
 
@@ -69,7 +71,7 @@
 	width: clamp(5vw, 15vw + 10%, 20vw);
 	margin: 0;
 	padding: 20px;
-	
+
 }
 
 .cards {

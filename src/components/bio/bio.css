@@ -1,8 +1,10 @@
 .bio {
-	margin: auto;
-	margin-left: 40px;
-	padding-left: 2vw;
-	text-align: center;
+	display: flex;
+	width: 100vw;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 30%;
 }
 
 .bio img {
@@ -20,19 +22,16 @@
 }
 
 .bio h2 {
-	padding: 20px 0 0 0;
 	font-size: 2.5em;
 	text-align: center;
 }
 
 .bio h3 {
-	padding: 20px 0;
 	font-size: 1.8em;
 	text-align: center;
 }
 
 .bio h4 {
-	padding: 50px 20px;
 	font-size: 1.1em;
 	text-align: center;
 	font-weight: bold;
@@ -43,11 +42,6 @@
 	padding: 0 40px 20px;
 	max-width: 1100px;
 	margin: auto;
-}
-
-.bio div {
-	padding-left: 10px;
-	border-left: 6px solid rgb(5, 169, 33) !important;
 }
 /* ===========MEDIA QUERIES (medium)===========*/
 

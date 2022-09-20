@@ -1,24 +1,25 @@
 
 .contact {
-	margin-left: 40px;
-    padding-left: 2vw;
-    text-align: center;
+width: 100vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 10vh;
 }
 
 .contact-container {
-	border-left: 6px solid hsl(130, 94%, 34%) ;
+	max-width: 1200px;
 }
 
 /* ===========MEDIA QUERIES (medium)===========*/
 
 @media screen and (max-width: 1024px) {
 	.contact {
-		margin-left: 50px;
 	}
 
 }
 @media screen and (max-width: 700px) {
 	.contact {
-		margin-left: 0px;
 	}
 }

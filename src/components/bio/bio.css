@@ -1,17 +1,20 @@
 .bio {
 	display: flex;
 	width: 100vw;
+	height: 100vh;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 30%;
+	overflow: hidden;
 }
 
+.bio-container{
+	overflow: hidden;
+}
 .bio img {
 	width: 50vw;
 	max-width: 600px;
 	height: auto;
-	margin: 20px 0 40px;
 	border-radius: 100vw;
 	border: 5px solid var(--color-primary);
 }
@@ -39,7 +42,13 @@
 
 .bio p {
 	text-align: center;
-	padding: 0 40px 20px;
+	padding: 20px 40px;
 	max-width: 1100px;
 	margin: auto;
+}
+@media screen and (max-width: 700px) {
+
+	.bio p {
+		font-size: 0.8em;
+	}
 }

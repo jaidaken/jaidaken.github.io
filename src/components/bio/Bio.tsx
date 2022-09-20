@@ -13,7 +13,8 @@ function Bio() {
 				animate={{ y: "0%", opacity: [0, 1] }}
 				exit={{ y: "-100%", transition: { duration: 0.2 } }}
 			>
-				<div className="bio-container">
+			<div className="bio-container">
+			<h2 className="bio-title">About Me</h2>
 
 					<p>
 						A web developer adept in building responsive, well-designed web applications, from front to back end.
@@ -33,9 +34,9 @@ function Bio() {
 				</p>
 				<motion.div
 					className="next"
-					initial={{ y: "60vh" }}
+					initial={{ y: "60vh", opacity: 0 }}
 					animate={{ y: "0vh", opacity: [0, 1] }}
-					transition={{ duration: 1, delay: 3 }}
+					transition={{ duration: 1, delay: 1 }}
 				>
 					<Link to="/projects"> <BsArrowDownSquare /> </Link>
 				</motion.div>

@@ -20,7 +20,7 @@ function Contact() {
 					className="next"
 					initial={{ y: "60vh" }}
 					animate={{ y: "0vh", opacity: [0, 1] }}
-					transition={{ duration: 1, delay: 3 }}
+					transition={{ duration: 1, delay: 1 }}
 				>
 					<Link to="/"> <BsArrowDownSquare /> </Link>
 				</motion.div>

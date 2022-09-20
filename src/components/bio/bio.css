@@ -6,6 +6,7 @@
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+padding-top: 10vh;
 }
 
 .bio-container{

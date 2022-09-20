@@ -25,18 +25,33 @@ const Header = () => {
 				>
 					Hello, I'm Jamie Hewitt
 				</motion.h1>
-				<img src={CircleMe} alt="A Picture of Jamie Hewitt" />
-				<h2>Full Stack Web Developer</h2>
+				<motion.img
+					src={CircleMe}
+					alt="A Picture of Jamie Hewitt"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: [0, 1] }}
+					transition={{ duration: 1 }}
+				/>
+				<motion.h2
+					initial={{ opacity: 0 }}
+					animate={{ opacity: [0, 1] }}
+					transition={{ duration: 1, delay: 0.4 }}
+				>Full Stack Web Developer</motion.h2>
 
-				<h4 className="techs">
+				<motion.h4
+					className="techs"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: [0, 1] }}
+					transition={{ duration: 1, delay: 0.8  }}
+				>
 					HTML • CSS • Javascript • Typescript • Node.js • ES6+ • React • React-Router • Redux • GraphQL • Framer Motion •
 					MongoDB • MySQL • PostgreSQL • Vite • Git
-				</h4>
+				</motion.h4>
 				<div className="links">
 					<motion.a
 						initial={{ y: "60vh" }}
 						animate={{ y: "0vh", opacity: [0, 1] }}
-						transition={{ duration: 1, delay: 1 }}
+						transition={{ duration: 1, delay: 0.4 }}
 						href="https://github.com/jaidaken"
 						target="__blank"
 						rel="noreferrer"
@@ -46,7 +61,7 @@ const Header = () => {
 					<motion.a
 						initial={{ y: "60vh" }}
 						animate={{ y: "0vh", opacity: [0, 1] }}
-						transition={{ duration: 1, delay: 1.3 }}
+						transition={{ duration: 1, delay: 0.6 }}
 						href="https://www.linkedin.com/in/jhewitthw/"
 						target="__blank"
 						rel="noreferrer"
@@ -57,7 +72,7 @@ const Header = () => {
 					<motion.a
 						initial={{ y: "60vh" }}
 						animate={{ y: "0vh", opacity: [0, 1] }}
-						transition={{ duration: 1, delay: 1.6 }}
+						transition={{ duration: 1, delay: 0.8 }}
 						href={CV}
 						target="_blank"
 						rel="noreferrer"
@@ -67,7 +82,7 @@ const Header = () => {
 					<motion.a
 						initial={{ y: "60vh" }}
 						animate={{ y: "0vh", opacity: [0, 1] }}
-						transition={{ duration: 1, delay: 1.9 }}
+						transition={{ duration: 1, delay: 1 }}
 						href="mailto:jamiehewitt@protonmail.com"
 						target="__blank"
 					>
@@ -79,7 +94,7 @@ const Header = () => {
 					className="next"
 					initial={{ y: "60vh" }}
 					animate={{ y: "0vh", opacity: [0, 1] }}
-					transition={{ duration: 1, delay: 2.5 }}
+					transition={{ duration: 1, delay: 2 }}
 				>
 					<Link to="/about"> <BsArrowDownSquare /> </Link>
 				</motion.div>

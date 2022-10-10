@@ -5,7 +5,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "cp 404.html dist/ && gh-pages -d dist",
-    "dev": "vite && server",
+		"dev": "concurrently --kill-others \"vite\" \"npm run server\"",
     "build": "tsc && vite build",
     "serve": "vite preview",
     "server": "nodemon server.js",
@@ -40,6 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^5.32.0",
     "@typescript-eslint/parser": "^5.32.0",
     "@vitejs/plugin-react": "^2.0.0",
+    "concurrently": "^7.4.0",
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",

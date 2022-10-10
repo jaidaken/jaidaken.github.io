@@ -1,7 +1,7 @@
 import "./projects.css";
 
 import { motion } from "framer-motion"
-import IMG1 from "../../assets/code.jpg";
+import IMG1 from "../../assets/code.webp";
 import ProjectCard from "./projectCard/ProjectCard";
 import { BsArrowDownSquare } from "react-icons/bs"
 import { Link } from "react-router-dom";

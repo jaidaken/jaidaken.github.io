@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { AiFillFilePdf, AiOutlineMail } from "react-icons/ai";
 import { BsArrowDownSquare } from "react-icons/bs"
 import * as bs from "react-icons/bs";
-import CircleMe from '../../assets/circleme.png';
+import CircleMe from '../../assets/circleme.webp';
 
 import CV from "../../assets/CV.pdf";
 import { Link } from "react-router-dom";

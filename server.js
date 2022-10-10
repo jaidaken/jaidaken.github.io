@@ -56,7 +56,7 @@ router.post("/contact", (req, res) => {
   contactEmail.sendMail(mail, (error) => {
 		if (error) {
 			console.log(error);
-      res.json({ status: "ERROR"});
+      res.json({ status: "Error sending Email, Try clicking the link on the homepage instead."});
     } else {
       res.json({ status: "Message Sent" });
     }

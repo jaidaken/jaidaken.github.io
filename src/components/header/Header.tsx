@@ -92,7 +92,7 @@ const Header = () => {
 						initial={{ y: "110vh" }}
 						animate={{ y: "0vh"}}
 						transition={{ duration: 1, delay: 1 }}
-						href="mailto:jamiehewitt@protonmail.com"
+						href="mailto:jamiehewitt@pm.me"
 						target="__blank"
 					>
 						<AiOutlineMail />

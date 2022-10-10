@@ -26,7 +26,6 @@ const Contact = () => {
 		}
 		let response = await fetch("http://localhost:5000/contact/", {
 			method: "POST",
-			credentials: 'include',
 			headers: {
 				"Content-Type": "application/json;charset=utf-8"
 			},

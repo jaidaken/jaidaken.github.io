@@ -1,15 +1,14 @@
 import "./nav.css";
-import {
-	AiOutlineFundProjectionScreen,
-	AiOutlineHome,
-	AiOutlineMessage,
-	AiOutlineMenu
-} from "react-icons/ai";
-import { FiBookOpen } from "react-icons/fi";
-import { AnimatePresence, motion } from "framer-motion"; <p>
-</p>
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+
+function goToTop() {
+	document.documentElement.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
+};
+
 
 function Nav() {
 	const [expandNavbar, setExpandNavbar] = useState(false);
@@ -24,10 +23,10 @@ function Nav() {
 		<div className="navbar" id={expandNavbar ? "open" : "close"}>
 			<div className="float">
 				<div className="links">
-					<Link to="/"> Home </Link>
-					<Link to="/about"> About </Link>
-					<Link to="/projects"> Projects </Link>
-					<Link to="/contact"> Contact </Link>
+					<Link to="/" onClick={goToTop}> Home </Link>
+					<Link to="/about" onClick={goToTop}> About </Link>
+					<Link to="/projects" onClick={goToTop}> Projects </Link>
+					<Link to="/contact" onClick={goToTop}> Contact </Link>
 				</div>
 			</div>
 		</div>

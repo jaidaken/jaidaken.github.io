@@ -1,12 +1,10 @@
 .bio {
 	display: flex;
 	width: 100vw;
-	height: 100vh;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	overflow:hidden;
-padding-top: 10vh;
+	padding-top: 10vh;
 }
 
 .bio img {
@@ -45,6 +43,10 @@ padding-top: 10vh;
 	margin: auto;
 }
 @media screen and (max-width: 700px) {
+
+	.bio {
+		padding-top: 2vh;
+	}
 
 	.bio p {
 		font-size: 0.8em;

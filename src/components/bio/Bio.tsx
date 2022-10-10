@@ -4,6 +4,13 @@ import { motion } from "framer-motion"
 import { BsArrowDownSquare } from "react-icons/bs"
 import { Link } from "react-router-dom";
 
+function goToTop() {
+	document.documentElement.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
+};
+
 function Bio() {
 	return (
 			<motion.section
@@ -34,11 +41,11 @@ function Bio() {
 				</p>
 				<motion.div
 					className="next"
-					initial={{ y: "60vh", opacity: 0 }}
-					animate={{ y: "0vh", opacity: [0, 1] }}
+					initial={{ opacity: 0 }}
+					animate={{ opacity: [0, 1] }}
 					transition={{ duration: 1, delay: 1 }}
 				>
-					<Link to="/projects"> <BsArrowDownSquare /> </Link>
+					<Link to="/projects" onClick={goToTop}> <BsArrowDownSquare /> </Link>
 				</motion.div>
 				</div>
 			</motion.section>

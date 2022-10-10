@@ -6,6 +6,13 @@ import ProjectCard from "./projectCard/ProjectCard";
 import { BsArrowDownSquare } from "react-icons/bs"
 import { Link } from "react-router-dom";
 
+function goToTop() {
+	document.documentElement.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
+};
+
 export default function Projects() {
 	return (
 			<motion.section
@@ -34,11 +41,11 @@ export default function Projects() {
 				</div>
 				<motion.div
 					className="next"
-					initial={{ y: "60vh" }}
-					animate={{ y: "0vh", opacity: [0, 1] }}
+					initial={{ opacity: 0  }}
+					animate={{ opacity: [0, 1] }}
 					transition={{ duration: 1, delay: 1 }}
 				>
-					<Link to="/contact"> <BsArrowDownSquare /> </Link>
+					<Link to="/contact" onClick={goToTop}> <BsArrowDownSquare /> </Link>
 				</motion.div>
 				</div>
 			</motion.section>

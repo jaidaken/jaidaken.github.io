@@ -9,6 +9,14 @@ import CircleMe from '../../assets/circleme.png';
 import CV from "../../assets/CV.pdf";
 import { Link } from "react-router-dom";
 
+
+function goToTop() {
+	document.documentElement.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
+};
+
 const Header = () => {
 	return (
 		<motion.section
@@ -96,7 +104,7 @@ const Header = () => {
 					animate={{ y: "0vh", opacity: [0, 1] }}
 					transition={{ duration: 1, delay: 2 }}
 				>
-					<Link to="/about"> <BsArrowDownSquare /> </Link>
+					<Link to="/about" onClick={goToTop}> <BsArrowDownSquare /> </Link>
 				</motion.div>
 			</div>
 		</motion.section>

@@ -58,7 +58,7 @@ const Header = () => {
 				</motion.h4>
 				<div className="links">
 					<motion.a
-						initial={{ y: "60vh" }}
+						initial={{ y: "110vh" }}
 						animate={{ y: "0vh" }}
 						transition={{ duration: 1, delay: 0.4 }}
 						href="https://github.com/jaidaken"
@@ -68,8 +68,8 @@ const Header = () => {
 						<bs.BsGithub />
 					</motion.a>
 					<motion.a
-						initial={{ y: "60vh" }}
-						animate={{ y: "0vh", opacity: [0, 1] }}
+						initial={{ y: "110vh" }}
+						animate={{ y: "0vh"}}
 						transition={{ duration: 1, delay: 0.6 }}
 						href="https://www.linkedin.com/in/jhewitthw/"
 						target="__blank"
@@ -79,8 +79,8 @@ const Header = () => {
 					</motion.a>
 
 					<motion.a
-						initial={{ y: "60vh" }}
-						animate={{ y: "0vh", opacity: [0, 1] }}
+						initial={{ y: "110vh" }}
+						animate={{ y: "0vh"}}
 						transition={{ duration: 1, delay: 0.8 }}
 						href={CV}
 						target="_blank"
@@ -89,8 +89,8 @@ const Header = () => {
 						<AiFillFilePdf />
 					</motion.a>
 					<motion.a
-						initial={{ y: "60vh" }}
-						animate={{ y: "0vh", opacity: [0, 1] }}
+						initial={{ y: "110vh" }}
+						animate={{ y: "0vh"}}
 						transition={{ duration: 1, delay: 1 }}
 						href="mailto:jamiehewitt@protonmail.com"
 						target="__blank"
@@ -101,9 +101,9 @@ const Header = () => {
 				</div>
 				<motion.div
 					className="next"
-					initial={{ y: "60vh" }}
+					initial={{ y: "110vh" }}
 					animate={{ y: "0vh", opacity: [0, 1] }}
-					transition={{ duration: 1, delay: 2 }}
+					transition={{ ease: 'easeInOut', duration: 1, delay: 2 }}
 				>
 					<Link to="/about" onClick={goToTop}> <BsArrowDownSquare /> </Link>
 				</motion.div>

@@ -45,7 +45,7 @@ function Bio() {
 					className="next"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: [0, 1] }}
-					transition={{ duration: 1, delay: 1.5 }}
+					transition={{ ease: 'easeInOut', duration: 1, delay: 2 }}
 				>
 					<Link to="/projects" onClick={goToTop}> <BsArrowDownSquare /> </Link>
 				</motion.div>

@@ -1,11 +1,10 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 // import Bio from "Components/bio/Bio";
-import Header from "Components/header/Header";
+import Header from "../../Components/header/Header";
 // import Projects from "Components/projects/Projects";
 // import ContactPage from "Components/contact/Contact";
-import PageNotFound from "Components/pagenotfound/PageNotFound";
-
+import PageNotFound from "../../Components/pagenotfound/PageNotFound";
 import { AnimatePresence } from "framer-motion"
 
 const Bio = React.lazy(() => import('../../Components/bio/Bio'));

@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 .contact {
 width: 100vw;
 display: flex;
@@ -12,9 +12,45 @@ padding-top: 10vh;
 	max-width: 1200px;
 }
 
+.Formlabel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+label {
+	padding-top: 20px;
+}
+
+::placeholder {
+	text-align: center;
+}
+
+input, textarea, button {
+	width: 300px;
+	padding: 5px;
+	color: white;
+	font-family: 'Fira Code';
+	background-color: rgb(68, 68, 68);
+}
+.form div {
+	padding: 5px;
+}
+
+button {
+	margin-top: 20px;
+	padding: 5px 15px;
+	width: 100px;
+}
+
 @media screen and (max-width: 700px) {
 
 	.contact {
 		padding-top: 2vh;
+	}
+
+	input, textarea, button {
+		width: 60vw;
 	}
 }

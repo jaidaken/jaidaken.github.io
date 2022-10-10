@@ -1,3 +1,4 @@
+const dotenv = require("dotenv").config();
 const express = require("express");
 const router = express.Router();
 const nodemailer = require("nodemailer");
@@ -5,6 +6,9 @@ const cors = require("cors")
 
 const app = express();
 app.use(cors())
+
+const userEmail = process.env.USER_EMAIL;
+const userPass = process.env.USER_PASSWORD;
 
 app.use(express.json());
 app.use("/", router);
@@ -15,18 +19,12 @@ const contactEmail = nodemailer.createTransport({
 	port: 1025,
 	secure: false,
 	auth: {
-		user: "jamiehewitt@pm.me",
-		pass: "tQras5dh5w8TC7bLrbtK7w"
+		user: `${userEmail}`,
+		pass: `${userPass}`,
 	},
 	tls: {
 			rejectUnauthorized: false
 	}
-
-  // service: "iCloud",
-  // auth: {
-  //   user: "jamie.l.hewitt@icloud.com",
-  //   pass: "jryp-jutr-gets-oyeu"
-  // }
 });
 
 contactEmail.verify((error) => {
@@ -43,8 +41,8 @@ router.post("/contact", (req, res) => {
 	const subject = req.body.subject;
   const message = req.body.message;
   const mail = {
-    from: 'jamiehewitt@pm.me',
-    to: "jamiehewitt@pm.me",
+    from: `${userEmail}`,
+    to: `${userEmail}`,
     subject: `${name}: ${subject}`,
 		html: `
 

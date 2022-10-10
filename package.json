@@ -5,7 +5,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "cp 404.html dist/ && gh-pages -d dist",
-		"dev": "concurrently --kill-others \"vite\" \"npm run server\"",
+    "dev": "concurrently --kill-others \"vite\" \"npm run server\"",
     "build": "tsc && vite build",
     "serve": "vite preview",
     "server": "nodemon server.js",
@@ -14,7 +14,6 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "axios": "^1.1.2",
     "bootstrap": "5.2.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
@@ -23,13 +22,11 @@
     "gsap": "^3.10.4",
     "nodemailer": "^6.8.0",
     "nodemon": "^2.0.20",
-    "protonmail-api": "^2.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-just-parallax": "^3.1.14",
-    "react-router-dom": "6",
-    "typeit-react": "^2.6.0"
+    "react-router-dom": "6"
   },
   "devDependencies": {
     "@types/node": "^18.7.14",

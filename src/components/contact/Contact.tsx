@@ -14,7 +14,7 @@ function goToTop() {
 const Contact = () => {
 
 	const [status, setStatus] = useState("Submit")
-	const handleSubmit = async (e:any) => {
+	const handleSubmit = async (e: any) => {
 		e.preventDefault();
 		setStatus("Sending...");
 		const { name, email, subject, message } = e.target.elements
@@ -24,8 +24,9 @@ const Contact = () => {
 			subject: subject.value,
 			message: message.value
 		}
-		let response = await fetch("http://jaidaken.github.io:5000/contact/", {
+		let response = await fetch("http://localhost:5000/contact/", {
 			method: "POST",
+			credentials: 'same-origin',
 			headers: {
 				"Content-Type": "application/json;charset=utf-8"
 			},
@@ -41,8 +42,9 @@ const Contact = () => {
 			id="contact"
 			className="contact"
 			initial={{ y: "100%", opacity: 0 }}
-			animate={{ y: "0%", opacity: [0, 1], transition: { duration: 0.2, ease: "linear" } }}
-			exit={{ y: "-100%", transition: { duration: 0.2, ease: "linear" } }}
+			animate={{ y: "0%", opacity: [0, 1] }}
+			transition={{ ease: "backInOut", duration: 1.4 }}
+			exit={{ y: "-100%" }}
 		>
 			<div className="contact-container">
 				<h1>Contact</h1>
@@ -86,7 +88,7 @@ const Contact = () => {
 				className="next"
 				initial={{ opacity: 0 }}
 				animate={{ opacity: [0, 1] }}
-				transition={{ duration: 1, delay: 1 }}
+				transition={{ duration: 1, delay: 1.5 }}
 			>
 				<Link to="/" onClick={goToTop}> <BsArrowDownSquare /> </Link>
 			</motion.div>

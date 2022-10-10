@@ -19,8 +19,9 @@ export default function Projects() {
 				id="projects"
 				className="projects"
 				initial={{ y: "100%", opacity: 0  }}
-				animate={{ y: "0%", opacity: 1, transition: { duration: 0.2, ease: "linear" } }}
-				exit={{ y: "-100%", transition: { duration: 0.2, ease: "linear" }}}
+			animate={{ y: "0%", opacity: 1 }}
+			transition={{ ease: "backInOut", duration: 1.4 }}
+				exit={{ y: "-100%"}}
 			>
 				<div className="project-container">
 					<h2 className="project-title">Projects</h2>
@@ -43,7 +44,7 @@ export default function Projects() {
 					className="next"
 					initial={{ opacity: 0  }}
 					animate={{ opacity: [0, 1] }}
-					transition={{ duration: 1, delay: 1 }}
+					transition={{ duration: 1, delay: 1.5 }}
 				>
 					<Link to="/contact" onClick={goToTop}> <BsArrowDownSquare /> </Link>
 				</motion.div>

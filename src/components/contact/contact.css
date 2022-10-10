@@ -53,4 +53,10 @@ button {
 	input, textarea, button {
 		width: 60vw;
 	}
+
+	button {
+		margin-top: 20px;
+		padding: 5px 15px;
+		width: 100px;
+	}
 }

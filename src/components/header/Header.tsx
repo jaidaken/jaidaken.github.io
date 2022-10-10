@@ -22,8 +22,9 @@ const Header = () => {
 		<motion.section
 			id="home" className="header"
 			initial={{ opacity: 0 }}
-			animate={{ opacity: [0, 1], transition: { duration: 0.2, ease: "linear" } }}
-			exit={{ y: "-100%", transition: { duration: 0.2, ease: "linear" } }}
+			animate={{ opacity: [0, 1] }}
+			transition={{ ease: "backInOut", duration: 1.4}}
+			exit={{ y: "-100%"}}
 		>
 			<div className="header-container">
 				<motion.h1
@@ -58,7 +59,7 @@ const Header = () => {
 				<div className="links">
 					<motion.a
 						initial={{ y: "60vh" }}
-						animate={{ y: "0vh", opacity: [0, 1] }}
+						animate={{ y: "0vh" }}
 						transition={{ duration: 1, delay: 0.4 }}
 						href="https://github.com/jaidaken"
 						target="__blank"

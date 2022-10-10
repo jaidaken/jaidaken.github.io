@@ -1,0 +1,15 @@
+.pnf {
+	display: flex;
+	font-size: 10rem;
+	width: 100vw;
+	margin: 20vh auto auto auto;
+	align-items: center;
+	justify-content: center;
+
+}
+@media screen and (max-width: 700px) {
+
+	.pnf {
+		font-size: 4rem;
+	}
+}

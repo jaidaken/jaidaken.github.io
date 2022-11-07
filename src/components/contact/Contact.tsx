@@ -3,7 +3,6 @@ import './contact.css';
 import { motion } from "framer-motion"
 import { BsArrowDownSquare } from "react-icons/bs"
 import { Link } from "react-router-dom";
-
 function goToTop() {
 	document.documentElement.scrollTo({
 		top: 0,

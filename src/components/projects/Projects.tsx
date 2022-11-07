@@ -33,11 +33,11 @@ export default function Projects() {
 
 						<ProjectCard img={IMG1} title="Portfolio" desc="You're on it!" demo="/" source="https://github.com/jaidaken/jaidaken.github.io" />
 
+						<ProjectCard img={IMG1} title="Typescript Calculator" desc="A functional calculator built with React and Typescript" demo="https://merry-gingersnap-27b3bb.netlify.app/" source="https://github.com/jaidaken/type-calc" />
+{/* 
 						<ProjectCard img={IMG1} title="Full stack app" desc="test" demo="https://github.com" source="https://github.com" />
 
-						<ProjectCard img={IMG1} title="Full stack app" desc="test" demo="https://github.com" source="https://github.com" />
-
-						<ProjectCard img={IMG1} title="Full stack app" desc="test" demo="https://github.com" source="https://github.com" />
+						<ProjectCard img={IMG1} title="Full stack app" desc="test" demo="https://github.com" source="https://github.com" /> */}
 
 				</div>
 				<motion.div

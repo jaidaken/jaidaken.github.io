@@ -48,7 +48,7 @@ const Contact = () => {
 			<div className="contact-container">
 				<h1>Contact</h1>
 			</div>
-			<form className="form" onSubmit={handleSubmit}>
+			<form className="form" onSubmit={handleSubmit} netlify>
 				<div className="Formlabel">
 
 					<label htmlFor="name"></label>

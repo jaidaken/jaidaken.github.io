@@ -2,6 +2,7 @@ import { useState } from "react";
 import './contact.css';
 import { motion } from "framer-motion"
 import { BsArrowDownSquare } from "react-icons/bs"
+import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
 function goToTop() {
 	document.documentElement.scrollTo({
@@ -47,7 +48,23 @@ const Contact = () => {
 			<div className="contact-container">
 				<h1>Contact</h1>
 			</div>
-			<form className="form" onSubmit={handleSubmit}>
+
+			<div className="email">
+				<p>To contact me please email me at</p>
+				<a href="mailto:jamiehewitt@pm.me" target="__blank">JamieHewitt@pm.me</a>
+				<p>Or click the button below</p>
+				<motion.a
+					className="email-btn"
+				initial={{ y: "110vh" }}
+				animate={{ y: "0vh" }}
+				transition={{ duration: 1, delay: 1 }}
+				href="mailto:jamiehewitt@pm.me"
+				target="__blank"
+			>
+				<AiOutlineMail />
+				</motion.a>
+				</div>
+			{/* <form className="form" onSubmit={handleSubmit}>
 				<div className="Formlabel">
 
 					<label htmlFor="name"></label>
@@ -80,7 +97,7 @@ const Contact = () => {
 
 					<button type="submit">{status}</button>
 				</div>
-			</form>
+			</form> */}
 
 			<motion.div
 				className="next"
